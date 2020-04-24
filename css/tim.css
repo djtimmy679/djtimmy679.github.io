@@ -1,0 +1,9 @@
+.pfp{
+    float:left;
+    margin-right: 5px;
+    border: solid-black 1px;
+    padding: 2px;
+}
+.bio-text{
+    clear: both;
+}
