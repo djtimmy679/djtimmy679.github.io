@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>AWS Acme Instant Tunnel</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <div class="inner">
+          <!-- Logo -->
+          <a href="index.html" class="logo">
+            <span class="title">AWS Acme Instant Tunnel</span>
+          </a>
+
+          <!-- Nav -->
+          <nav>
+            <ul>
+              <li><a href="#menu">Menu</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Menu -->
+      <nav id="menu">
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+
+      <!-- Main -->
+      <div>
+        <img src="/img/TunnelSuccess.png" alt="Pic" />
+      </div>
+      <div id="main">>
+        <div class="inner">
+          <h1>Description of Project</h1>
+          <p>
+            AWS Acme Instant Tunnel is a tool to temporarily grant SSH access
+            via Port 22 for a preconfigured EC2 instance to an authorized &
+            authenticated user. The following services were used to build this
+            tool: Serverless framework (serverless.com), AWS Lambda w/ Node.js,
+            DynamoDB, EC2 & Security Groups, SAML & SSO Authentication via Auth0
+            (Google G-Suite, Github), API Gateway, S3 Static Front-End Site
+            Hosting.
+          </p>
+          <h2>Problem</h2>
+          <p>
+            The CIS security best practices for AWS (4.1) recommends
+            that Port 22 has no public incoming traffic (0.0.0.0/0), so a
+            problem arises when trying to access instances via SSH. A possible
+            solution to this would be manually adding permissions (access from a
+            specified IP address for example) to a instance's security group,
+            but this could be very error prone and inconsistent. Some
+            enterprises deal with this issue by having people VPN into their
+            corporate network and having people SSH from there. However, this
+            doesn't make sense for many distributed organizations where there is
+            no VPN or granting access to a VPN is not a good idea for those who
+            need to SSH into AWS resources. 
+          </p>
+          <h2>Solution</h2> 
+          <p>
+            AWS Acme Instant Tunnel presents an
+            alternative to the two aforementioned approaches by automating the
+            authorization, management and storage of security group permissions
+            for temporary SSH access.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
