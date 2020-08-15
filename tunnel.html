@@ -24,8 +24,11 @@
       <header id="header">
         <div class="inner">
           <!-- Logo -->
-          <a href="https://github.com/moduslabs/aws-acme-instant-tunnel" class="logo">
-            <h1>AWS Acme Instant Tunnel </h1>
+          <a
+            href="https://github.com/moduslabs/aws-acme-instant-tunnel"
+            class="logo"
+          >
+            <h1>AWS Acme Instant Tunnel</h1>
           </a>
 
           <!-- Nav -->
@@ -50,7 +53,9 @@
         <div class="inner">
           <ul class="actions">
             <li>
-              <a href="https://github.com/moduslabs/aws-acme-instant-tunnel" class="button primary"
+              <a
+                href="https://github.com/moduslabs/aws-acme-instant-tunnel"
+                class="button primary"
                 >Code on Github</a
               >
             </li>
@@ -67,24 +72,24 @@
           </p>
           <h2>Problem</h2>
           <p>
-            The CIS security best practices for AWS (4.1) recommends
-            that Port 22 has no public incoming traffic (0.0.0.0/0), so a
-            problem arises when trying to access instances via SSH. A possible
-            solution to this would be manually adding permissions (access from a
-            specified IP address for example) to a instance's security group,
-            but this could be very error prone and inconsistent. Some
-            enterprises deal with this issue by having people VPN into their
-            corporate network and having people SSH from there. However, this
-            doesn't make sense for many distributed organizations where there is
-            no VPN or granting access to a VPN is not a good idea for those who
-            need to SSH into AWS resources. 
+            The CIS security best practices for AWS (4.1) recommends that Port
+            22 has no public incoming traffic (0.0.0.0/0), so a problem arises
+            when trying to access instances via SSH. A possible solution to this
+            would be manually adding permissions (access from a specified IP
+            address for example) to a instance's security group, but this could
+            be very error prone and inconsistent. Some enterprises deal with
+            this issue by having people VPN into their corporate network and
+            having people SSH from there. However, this doesn't make sense for
+            many distributed organizations where there is no VPN or granting
+            access to a VPN is not a good idea for those who need to SSH into
+            AWS resources.
           </p>
-          <h2>Solution</h2> 
+          <h2>Solution</h2>
           <p>
-            AWS Acme Instant Tunnel presents an
-            alternative to the two aforementioned approaches by automating the
-            authorization, management and storage of security group permissions
-            for temporary SSH access.
+            AWS Acme Instant Tunnel presents an alternative to the two
+            aforementioned approaches by automating the authorization,
+            management and storage of security group permissions for temporary
+            SSH access.
           </p>
         </div>
       </div>
