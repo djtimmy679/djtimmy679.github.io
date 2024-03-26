@@ -1,0 +1,30 @@
+.nav-item-spacing {
+    margin-right: 30px; /* Adjust as needed */
+}
+:root {
+    --bs-body-bg: var(--bs-gray-100);
+}
+.icon-black {
+    color: black !important; /* Ensure this overrides other styles */
+}
+.modal-content {
+    border-radius: 0.5rem; /* Rounded corners for the modal */
+  }
+  
+  .embed-responsive-16by9 {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 0.25rem; /* Rounded corners for the iframe */
+  }
+  
+  .modal-header {
+    border-bottom: none; /* Removes the default border to keep it clean */
+  }
+  
+  .modal-footer {
+    border-top: none; /* Removes the default border to keep it clean */
+  }
+  
+  .btn-outline-primary {
+    border-width: 2px; /* Makes the border of the button thicker */
+  }

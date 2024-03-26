@@ -1,159 +1,256 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <title>Timothy Vu</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <noscript>
-    <link rel="stylesheet" href="assets/css/noscript.css" />
-  </noscript>
-</head>
-
-<body class="is-preload">
-  <!-- Wrapper -->
-  <div id="wrapper">
-    <!-- Header -->
-    <header id="header">
-      <div class="inner">
-
-        <!-- Nav -->
-        <nav>
-          <ul>
-            <li><a href="#menu">Menu</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <!-- Menu -->
-    <nav id="menu">
-      <h2>Menu</h2>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-      </ul>
-    </nav>
-
-    <!-- Main -->
-    <div id="main">
-      <div class="inner">
-        <header>
-          <h1>Timothy Vu's Project Portfolio
-          </h1>
-          <p>
-            I am a Cornell University student, Army ROTC cadet, and aspiring software engineer. My professional
-            experience
-            includes working as an intern at Microsoft (Summer 2022), the Department of Defense (Summer 2021), Modus Create Inc. (Summer 2020), and the US Naval
-            Research Lab
-            (Summer 2020 and 2019). Feel free to check out
-            my <a href="http://linkedin.com/in/timvu123">Linkedin</a> or projects below!
-          </p>
-        </header>
-        <!-- <ul class="actions">
-            <li>
-              <a href="Timothy_Vu_Resume.pdf" class="button primary"
-                >Download my resume</a
-              >
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Timothy Vu Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Timothy Vu</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item nav-item-spacing">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
-          </ul> -->
-        <section class="tiles">
-          <article class="style1">
-            <span class="image">
-              <img src="images/pic01.jpg" alt="" />
-            </span>
-            <a href="https://moduscreate.com/blog/automating-ssh-aws-acme-tunnel/">
-              <h2>AWS Acme Instant Tunnel</h2>
-              <div class="content">
-                <p>
-                  AWS Serverless application that automates the authorization,
-                  management and storage of security group permissions for
-                  temporary SSH access using Auth0 SAML, AWS Lambda, DynamoDB,
-                  and API Gateway.
-                </p>
+            <li class="nav-item nav-item-spacing">
+              <a href="about.html" class="nav-link">About Me</a>
+            </li>            
+          </ul>
+          <div class="d-flex">
+            <a href="contact.html" class="btn btn-dark">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </nav>   
+    <div class="container my-5">
+      <div class="container my-5 text-center">
+        <h1>Hello, I'm Timothy!</h1>
+        <p class="fs-4">Studying CS @ Cornell</p>
+        <p class="fs-4">Incoming Site Reliability Engineer @ Microsoft</p>
+        <!-- <p class="fs-4">Cyber Warfare Officer at US Army Reserves</p> -->
+    </div>
+      </div>
+    </div>
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#modal1">
+            <img src="images/whackamole.webp" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Whack-A-Mole</h5>
+              <p class="card-text"> An enhanced version of the classic game leveraging an NXP microcontroller connecting to an interactive GUI </p>
+              <div class="mb-3">
+                <h6 class="fw-bold">Skills</h6>
+                <span class="badge rounded-pill bg-secondary">Python</span>
+                <span class="badge rounded-pill bg-secondary">C</span>
               </div>
-            </a>
-          </article>
-          <article class="style2">
-            <span class="image">
-              <img src="images/pic02.jpg" alt="" />
-            </span>
-            <a href="https://twutor.herokuapp.com">
-              <h2>TJ Twutor</h2>
-              <div class="content">
-                <p>
-                  Student networking app designed to connect struggling
-                  students with study groups and qualified peer tutors. Built
-                  using MongoDB, Express, Node.js
-                </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#modal2">
+            <img src="images/tunnel.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">AWS Instant Tunnel</h5>
+              <p class="card-text">DevSecOps tool automating temporary SSH access to EC2 instances </p>
+              <div class="mb-3">
+                <h6 class="fw-bold">Skills</h6>
+                <span class="badge rounded-pill bg-secondary">Amazon Web Services (AWS)</span>
+                <span class="badge rounded-pill bg-secondary">Node.js</span>
+                <span class="badge rounded-pill bg-secondary">HTML</span>
+                <span class="badge rounded-pill bg-secondary">CSS</span>
               </div>
-            </a>
-          </article>
-          <article class="style3">
-            <span class="image">
-              <img src="images/pic03.jpg" alt="" />
-            </span>
-            <a href="https://deploy-preview-34--vueport-shop.netlify.app">
-              <h2>Vueport Shop</h2>
-              <div class="content">
-                <p>
-                  MVP E-commerce website built using Ionic, Vue, and
-                  TypeScript. Currently in beta
-                </p>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#modal3">
+            <img src="images/twutor.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Twutor</h5>
+              <p class="card-text">Web app that seamlessly connects students and tutors based on expertise and learning need</p>
+              <div class="mb-3">
+                <h6 class="fw-bold">Skills</h6>
+                <span class="badge rounded-pill bg-secondary">Node.js</span>
+                <span class="badge rounded-pill bg-secondary">Express.js</span>
+                <span class="badge rounded-pill bg-secondary">MongoDB</span>
+                <span class="badge rounded-pill bg-secondary">HTML</span>
+                <span class="badge rounded-pill bg-secondary">CSS</span>
               </div>
-            </a>
-          </article>
-          <article class="style4">
-            <span class="image">
-              <img src="images/pic04.jpg" alt="" />
-            </span>
-            <a href="Quad_Chart.pdf">
-              <h2>Summer 2020 Research</h2>
-              <div class="content">
-                <p>
-                  Continuing previous years research with a focus on data
-                  analysis and processing using Python and ImageJ
-                </p>
+            </div>
+          </div>
+        </div>
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#modal4">
+              <img src="images/research.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Research</h5>
+                <p class="card-text">Worked on various signal processing and chemical detection techniques at the US Naval Research Laboratory</p>
+                <div class="mb-3">
+                  <h6 class="fw-bold">Skills</h6>
+                  <span class="badge rounded-pill bg-secondary">Java</span>
+                  <span class="badge rounded-pill bg-secondary">Python</span>
+                </div>                
               </div>
+            </div>
+          </div>
+          </div>
+      </div>
+  </div>
+  <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal">
+      <div class="modal-content border-0">
+        <div class="modal-header bg-black text-white">
+          <h5 class="modal-title" id="modal1Label">Whack-A-Mole Game Project</h5>
+          <!-- Removed btn-close here -->
+        </div>
+        <div class="modal-body p-4">
+          <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/z59R39NSD6Y?si=59kiY2nVto5fQ5kj" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="text-center my-3">
+            <a href="https://github.coecis.cornell.edu/ece3140-sp2023/gyc22-tv75" class="btn btn-dark">
+              <i class="bi bi-code-slash"></i> View Code
             </a>
-          </article>
-          <article class="style5">
-            <span class="image">
-              <img src="images/pic05.jpg" alt="" />
-            </span>
-            <a href="SEAP_Final_Report.pdf">
-              <h2>Summer 2019 Research</h2>
-              <div class="content">
-                <p>
-                  Conducted extensive research with Raman and IR spectroscopy.
-                </p>
-              </div>
-            </a>
-          </article>
-          <article class="style6">
-            <span class="image">
-              <img src="images/pic06.jpg" alt="" />
-            </span>
-            <a href="generic.html">
-              <h2>Publications</h2>
-              <div class="content">
-                <p>
-                  Various publications including company blog posts and research papers
-                </p>
-              </div>
-            </a>
-          </article>
-        </section>
+          </div>
+          <ul>
+            <li>Utilizes switches for vertical and a touch capacitor for horizontal control and Python GUI.</li>
+            <li>The Python GUI, inspired by prior coursework, dynamically updates game states based on serial inputs from the microcontroller.</li>
+            <li>C code uses UART protocol for communication between the FRDM-KL46Z board and UI</li>
+            <li>Voted as one of the class top 10 projects</li>
+          </ul>        
+        </div>
+      </div>
+    </div>
+</div>
+  
+          <!-- Modal 2 -->
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal">
+        <div class="modal-content border-0">
+          <div class="modal-header bg-black text-white">
+            <h5 class="modal-title" id="modal1Label">AWS Instant Tunnel</h5>
+          </div>
+          <div class="modal-body p-4">
+            <img src="images/tunnel_diagram.PNG" alt="AWS Instant Tunnel Diagram" style="display: block; margin: auto; max-width: 80%; height: 20;" class="bordered-image">
+            <div class="text-center my-3">
+              <a href="https://moduscreate.com/blog/automating-ssh-aws-acme-tunnel/" class="btn btn-dark me-2">
+                <i class="bi bi-globe"></i> Read Article
+              </a>
+              <a href="https://github.com/moduslabs/aws-acme-instant-tunnel" class="btn btn-dark">
+                <i class="bi bi-code-slash"></i> View Code
+              </a>
+            </div>
+            <ul>
+              <li>Automates authorization, management, and revocation of temporary SSH access.</li>
+              <li>Integrates AWS services such as DynamoDB, Lambda functions, and IAM roles.</li>
+              <li>Uses Auth0 for user authentication.</li>
+              <li>Upon successful authentication, temporary permissions are granted and managed through a security group, with details stored in DynamoDB.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal">
+        <div class="modal-content border-0">
+          <div class="modal-header bg-black text-white">
+            <h5 class="modal-title" id="modal3Label">Twutor</h5>
+          </div>
+          <div class="modal-body p-4">
+            <img src="images/twutor.PNG" alt="Twutor" style="display: block; margin: auto; max-width: 80%; height: 20;" class="bordered-image">
+            <div class="text-center my-3">
+              <!-- Visit Site Button -->
+              <a href="https://twutor-9634b264608f.herokuapp.com/#" class="btn btn-dark me-2">
+                <i class="bi bi-globe"></i> Visit Site
+              </a>
+              <!-- View Code Button -->
+              <a href="https://github.com/djtimmy679/twutor" class="btn btn-dark">
+                <i class="bi bi-code-slash"></i> View Code
+              </a>
+            </div>
+            <ul>
+              <li>Twutor connects students and tutors based on shared interest and expertise</li>
+              <li>Utilizes MongoDB Atlas for a robust, cloud-based database solution.</li>
+              <li>Backend built using Express.JS and Node.js</li>
+              <li>Dynamic content rendering with Handlebars and responsive UI design with Bootstrap</li>
+            </ul>        
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Modal 4 -->
+<div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal">
+    <div class="modal-content border-0">
+      <div class="modal-header bg-black text-white">
+        <h5 class="modal-title" id="modal4Label">Research</h5>
+      </div>
+      <div class="modal-body p-4">
+        <!-- Carousel Slideshow -->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/quadchart1.PNG" class="d-block w-100" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+              <img src="images/quadchart2.PNG" class="d-block w-100" alt="Image 2">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- Buttons -->
+        <div class="text-center my-3">
+          <a href="SEAP_Final_Report.pdf" class="btn btn-dark">
+            <i class="bi bi-file-text"></i> 2019 Paper
+          </a>
+          <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11725/117250J/Toward-single-frame-snapshot-stand-off-detection-of-target-chemicals/10.1117/12.2585988.short?SSO=1" class="btn btn-dark">
+            <i class="bi bi-code-slash"></i> 2021 Paper
+          </a>
+        </div>
+        <ul>
+          <li>Created a database of 50+ chemical spectra of forensic materials for use by NRL chemists and physicists</li>
+          <li>Used databases to map samples simulating standoff detection of ilicit substances</li>
+          <li>Improved signal processing algorithm using Python </li>
+          <li>Co-authored conference proceedings paper presented at SPIE Defense + Commercial Sensing 2021</li>         
+        </ul>        
       </div>
     </div>
   </div>
+</div>
 
-  <!-- Scripts -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
-</body>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="main.js"></script>
+  </body>
 </html>
+<style>
+  /* CSS code to style the image with a border */
+  .bordered-image {
+    border: 2px solid #000; /* You can adjust the width and color of the border */
+    padding: 5px; /* Optional: Add padding to create space between the image and the border */
+  }
+  .carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: drop-shadow(2px 2px 2px #000);
+}
+</style>
