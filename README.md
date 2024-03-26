@@ -7,4 +7,4 @@ Showcasing many of my past projects
 - Research Projects
 - Publications
 
-Visit at https://timothydvu.com
+Visit at https://timothydnvu.com
